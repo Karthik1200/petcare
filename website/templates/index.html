@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petcare</title>
+    <link rel="icon" href="{{url_for('static',filename='petcarelogo.jpg')}}" type="icon">
+    <link rel="stylesheet" href="{{url_for('static',filename='index.css')}}" type="text/css">
+</head>
+<body>
+    <form action="/start" method="post">
+    <div class="navbar">
+        <a href=""><img src="{{url_for('static',filename='petcarelogo.jpg')}}" width="100px" height="100px"></a>
+        <a href="{{url_for('about')}}">About</a>
+        <a href="{{url_for('home')}}">Home</a>
+        <a href="{{url_for('logout')}}">Logout</a>
+        <br><h1 class="titlecard">Welcome to the  Petcare</h1><br>
+    </div> 
+    <div class="container">
+        <div class="gallery">
+            <div class="card">
+                <!-- <a href="{{url_for('german')}}"> -->
+                    <img src="{{url_for('static',filename='germanshepard.png')}}" alt="Dog 4">
+                <!-- </a> -->
+                <h5>German Shepard</h5>
+                <a href="{{url_for('german')}}"><h6>view more</h6></a>
+            </div>
+            <div class="card">
+                <!-- <a href="{{url_for('pomaranian')}}"> -->
+                    <img src="{{url_for('static',filename='pomaranian.png')}}" alt="Dog 2">
+                <!-- </a> -->
+                <h5>Pomaranian</h5>
+                <a href="{{url_for('pomaranian')}}"><h6>view more</h6></a>
+            </div>
+            <div class="card">
+                <!-- <a href="{{url_for('haski')}}"> -->
+                    <img src="{{url_for('static',filename='Haski.png')}}" alt="Dog 3">
+                <!-- </a> -->
+                <h5>Haski</h5>
+                <a href="{{url_for('haski')}}"><h6>view more</h6></a>
+            </div>
+            <div class="card">
+              <!-- <a href="{{url_for('golden')}}"> -->
+                  <img src="{{url_for('static',filename='goldenretriver.png')}}" alt="Dog 3">
+              <!-- </a> -->
+              <h5>Golden Retriever</h5>
+              <a href="{{url_for('golden')}}"><h6>view more</h6></a>
+          </div>
+          <div class="card">
+            <!-- <a href="{{url_for('beagle')}}"> -->
+                <img src="{{url_for('static',filename='Beagle.png')}}" alt="Dog 3">
+            <!-- </a> -->
+            <h5>Beagle</h5>
+            <a href="{{url_for('beagle')}}"><h6>view more</h6></a>
+        </div>
+        <div class="card">
+          <!-- <a href="{{url_for('dober')}}"> -->
+              <img src="{{url_for('static',filename='doberman.jpg')}}" alt="Dog 3">
+          <!-- </a> -->
+          <h5>Doberman</h5>
+          <a href="{{url_for('dober')}}"><h6>view more</h6></a>
+      </div>
+      <div class="card">
+        <!-- <a href="{{url_for('greatdane')}}"> -->
+            <img src="{{url_for('static',filename='greatdane.png')}}" alt="Dog 3">
+        <!-- </a> -->
+        <h5>Great Dane</h5>
+        <a href="{{url_for('greatdane')}}"><h6>view more</h6></a>
+    </div>
+    <div class="card">
+      <!-- <a href="{{url_for('dashshund')}}"> -->
+          <img src="{{url_for('static',filename='dashshund.png')}}" alt="Dog 3">
+      <!-- </a> -->
+      <h5>Dachshund</h5>
+      <a href="{{url_for('dashshund')}}"><h6>view more</h6></a>
+  </div>
+  <div class="card">
+    <!-- <a href="{{url_for('rot')}}"> -->
+        <img src="{{url_for('static',filename='rot.png')}}" alt="Dog 3">
+    <!-- </a> -->
+    <h5>Rottweiler</h5>
+    <a href="{{url_for('rot')}}"><h6>view more</h6></a>
+</div>
+<div class="card">
+  <!-- <a href=" {{url_for('bull')}}"> -->
+      <img src="{{url_for('static',filename='bulldog.png')}}" alt="Dog 3">
+  <!-- </a> -->
+  <h5>Bull Dog</h5>
+  <a href="{{url_for('bull')}}"><h6>view more</h6></a>
+</div>
+<div class="card">
+    <!-- <a href="{{url_for('pit')}}"> -->
+        <img src="{{url_for('static',filename='pitbull.png')}}" alt="Dog 3">
+    <!-- </a> -->
+    <h5>PitBull</h5>
+    <a href="{{url_for('pit')}}"><h6>view more</h6></a>
+  </div>
+  <div class="card">
+    <!-- <a href=" {{url_for('lab')}}"> -->
+        <img src="{{url_for('static',filename='labrador.png')}}" alt="Dog 3">
+    <!-- </a> -->
+    <h5>Labrador</h5>
+    <a href="{{url_for('lab')}}"><h6>view more</h6></a>
+  </div>
+            <!-- Additional cards with links -->
+        </div>
+    </div>
+ </form>
+</body>
+</html>

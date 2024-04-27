@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petcare</title>
+    <link rel="icon" href="{{url_for('static',filename='petcarelogo.jpg')}}" type="icon">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}" type="text/css">
+</head>
+<body>
+    <form action="/login" method="post"></form>
+    <div class="navbar">
+        <a href=""><img src="{{url_for('static',filename='petcarelogo.jpg')}}" width="100px" height="100px"></a>
+        <a href="{{url_for('register')}}">Register</a>
+            <a href="{{url_for('login')}}">Login</a>
+        <br><h1 class="titlecard">Welcome to the  Petcare</h1><br>
+    </div> 
+    <div class="container">
+        <h1>"Dogs are not our whole life, but they make our lives whole"</h1>
+    </div>
+</body>
+</html>

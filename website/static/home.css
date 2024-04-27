@@ -1,0 +1,85 @@
+body {
+        background-image: url('/static/bghome.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    font-family: Arial, sans-serif;
+  
+}
+.container {
+
+    margin: 200px;
+    margin-left: 70px;
+    padding: 20px;
+    height: 20px;
+    width:500px;
+    text-align-last: right;
+    color: black;
+    
+}
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.header h1 {
+    font-size: 36px;
+    font-family:'Times New Roman', Times, serif;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 96px;
+}
+.gallery .card {
+    
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+}
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+.footer {
+    text-align: center;
+    margin-top: 20px;
+}
+.navbar {
+    background-color:none;
+    overflow: hidden;
+    padding: -10px;
+    margin: -8px;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+ 
+    color:rgb(243, 237, 237);
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+}
+
+.titlecard{
+    margin-top: 30px;
+    margin-left: 600px;
+    color:black;
+
+}
+
+.bottom{
+    background-color: #333;
+    width:100%;
+    height:200px;
+}
+
+

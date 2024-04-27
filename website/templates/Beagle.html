@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dobermann</title>
+    <style>
+        body{
+            background-image: url('/static/pic.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 50%;
+  margin-top: -500px;
+  margin-left: 600px;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+    padding: -10px;
+    margin: -8px;
+}
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+ 
+    color: white;
+    text-decoration: none;
+}
+.titlecard{
+    margin-top: 10px;
+    margin-left: 600px;
+    color: #ccc;
+
+}
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href=""><img src="{{url_for('static',filename='petcarelogo.jpg')}}" width="100px" height="100px"></a>
+        <form action="/start" method="post">
+        <button type="submit">Back</button>
+    </form>
+        <br><h1 class="titlecard">Beagle</h1><br>
+    </div>
+    <div class="container">
+      <img src="{{url_for('static',filename='Beagle.png')}}" width="450px" height="550px" >
+    </div>
+    <table>
+        <tr>
+            <th>Category</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>Coat</td>
+            <td>Short and dense</td>
+        </tr>
+        <tr>
+            <td>Shedding</td>
+            <td>Medium</td>
+        </tr>
+        <tr>
+            <td>Size</td>
+            <td>Small</td>
+        </tr>
+        <tr>
+            <td>Life Expectancy</td>
+            <td>8-10 years</td>
+        </tr>
+        
+        <tr>
+            <td>Coat Color</td>
+            <td>
+                <p>White & Tan</p>
+            </td>
+        </tr>
+        <tr>
+            <td>Weight</td>
+            <td>
+                <p>10-11kgs (male)/
+                    9-10kgs (female)</p>
+            </td>
+        </tr>
+        <tr>
+            <td>Height</td>
+            <td>
+                <p>36-41cm (male)/
+                    33-38cm (female)</p>
+            </td>
+        </tr>
+        <tr>
+            <td>Diet</td>
+            <td>
+                <p>1. Choose a balanced diet</p>
+                <p>2. Avoid fillers & additives</p>
+                <p>3.Consider their age</p>
+            </td>
+        </tr>
+        <tr>
+            <td>Training</td>
+            <td>
+                <p>1. Physical training and exercises</p>
+                <p>2. Interactive play</p>
+            </td>
+        </tr>
+        <tr>
+            <td>Grooming</td>
+            <td>
+                <p>1. Brush and bath</p>
+                <p>2. Keep their ears clean</p>
+                <p>3. Nail and paw care</p>
+                <p>4. Dental care</p>
+            </td>
+        </tr>
+        <tr>
+            <td>Foods</td>
+            <td>
+                <p>Puppy:Pedigree Chicken and Milk Puppy Dry Food</p>
+                <p>SemiAdult:Royal Canin  Adult Beagle Dry Food</p>
+                <p>Adult:Pedigree Chicken and Vegetables Adult Dry Dog Food</p>
+                
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

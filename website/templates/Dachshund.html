@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashshund</title>
+    <style>
+          body{
+            background-image: url('/static/pic.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 50%;
+  margin-top: -500px;
+  margin-left: 600px;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+    padding: -10px;
+    margin: -8px;
+}
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+ 
+    color: white;
+    text-decoration: none;
+}
+.titlecard{
+    margin-top: 10px;
+    margin-left: 600px;
+    color: #ccc;
+
+}
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href=""><img src="{{url_for('static',filename='petcarelogo.jpg')}}" width="100px" height="100px"></a>
+        <form action="/start" method="post">
+        <button type="submit">Back</button>
+    </form>
+        <br><h1 class="titlecard">Dashshund</h1><br>
+    </div>
+    <div class="container">
+      <img src="{{url_for('static',filename='dashshund.png')}}" width="550px" height="550px" >
+    </div>
+    <table>
+        <tr>
+            <th>Category</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>Coat</td>
+            <td>Wirehaired/Longhaired/Shorthaired</td>
+        </tr>
+        <tr>
+            <td>Shedding</td>
+            <td>Medium</td>
+        </tr>
+        <tr>
+            <td>Size</td>
+            <td>Short</td>
+        </tr>
+        <tr>
+            <td>Life Expectancy</td>
+            <td>
+                <p>	12 to 15 years</p>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>Coat Color</td>
+            <td>
+                <p>Solid red, black & tan, chocolate & tan, dapple, brindle, piebald or blue.</p>
+        
+            </td>
+        </tr>
+        <tr>
+            <td>Weight</td>
+            <td>
+                <p>16 to 32 pounds</p>
+            </td>
+        </tr>
+        <tr>
+            <td>Height</td>
+            <td>
+                <p>	8 inches to 9 inches</p>
+            </td>
+        </tr>
+        <tr>
+            <td>Diet</td>
+            <td>
+                <p>1. Choose a protein-rich diet</p>
+                <p>2. Avoid fillers & additives</p>
+                <p>4. Consider their age</p>
+                <!-- Additional information for Tail category -->
+            </td>
+        </tr>
+        <tr>
+            <td>Training</td>
+            <td>
+                <p>1.  Lots of physical exercise</p>
+                <p>2. Engage in interactive play</p>
+                <!-- Additional information for Ears category -->
+            </td>
+        </tr>
+        <tr>
+            <td>Grooming</td>
+            <td>
+                <p>1. Brush and bath</p>
+                <p>2. Keep their ears clean</p>
+                <p>3. Nail and paw care</p>
+                <p>4. Dental care</p>
+                <!-- Additional information for Ears category -->
+            </td>
+        </tr>
+        <tr>
+            <td>Foods</td>
+            <td>
+                <p>Puppy:Royal Canin Starter Puppy Dog Dry Food</p>
+                <p>SemiAdult:Royal Canin Maxi Adult Dog Dry Food</p>
+                <p>Adult:Royal Canin Giant Dog Dry Food</p>
+                <!-- Additional information for Ears category -->
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

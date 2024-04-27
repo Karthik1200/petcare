@@ -1,0 +1,23 @@
+body {
+    background-image: url('/static/dog2.jpg');
+    background-repeat: no-repeat;
+   
+}
+
+.grid-container {
+    display:inline-block;
+    flex-direction: column; /* Align grid boxes vertically */
+    justify-content: center; /* Center-align vertically */
+    align-items: flex-end; /* Align to the right */
+    height: 50%; /* Adjust height as needed */
+    padding: 50px; /* Add padding as needed */
+}
+
+.grid-item {
+    padding: 20px;
+    font-size: 16px;
+    margin-bottom: 50px; /* Add margin between grid items */
+    width:500px ;
+    height:550px;
+    margin-left: 400px;
+}
